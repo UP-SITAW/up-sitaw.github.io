@@ -3,6 +3,7 @@ site_url: https://up-sitaw.github.io/
 nav:
   - Home: index.md
   - 'Developer Documentation':
+    - 'Lifeline Web App': developer/lifeline-web-app/index.md
     - 'Lifeline Deployment':
       - 'Deploying Lifeline on Docker': developer/lifeline-deployment/deploying-lifeline-on-docker.md
     - myBESHIE:
