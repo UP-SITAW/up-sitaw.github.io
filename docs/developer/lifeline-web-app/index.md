@@ -1,88 +1,86 @@
-
 # Lifeline v2 Frontend
 
-## Getting started
+This guide will help you get started with the application, provide details about dependencies, and explain the folder structure. If you encounter any issues, feel free to refer to this manual for assistance.
 
-- Recommended `node js 14.x` and `npm 6+`
+## Getting Started
 
-- Install dependencies: `npm install --legacy-peer-deps`
+Before you begin, please ensure you have **Node.js 14.x** and **npm 6+** installed on your system. Follow these steps to set up and run the Lifeline v2 Frontend:
 
-- (`--legacy-peer-deps` temporarily resolves dependency errors)
+- Install project dependencies:
 
-- Start the project: `npm run start`
+```bash
+npm install --legacy-peer-deps
+```
 
-NOTE: Dependency errors encountered when `yarn` is used.
+   Note: The `--legacy-peer-deps` flag is used temporarily to resolve dependency errors.
 
-  
+- Start the project:
+```bash
+npm run start
+```
 
-Create an `.env` file at the project root folder and specify the port number. You may rename `sample.env` to `.env`.
+- Build the project:
+```bash
+npm run build
+```
 
-    PORT - Port were app will run
-    
-    REACT_APP_FHIR_SERVER_URL - FHIR endpoint of HAPI FHIR Server
-    
-    REACT_APP_DOMAIN - Website domain of the SITAW, to be used on SITAW specific FHIR resource/data (sample for now).
+**Important Notes:**
 
-    REACT_APP_LIFELINE_BACKEND_URL - Lifeline Backend endpoint
+- If you encounter dependency errors when using `yarn`, it is recommended to stick with `npm` for now.
 
-    REACT_APP_PUSHER_EVENT - Pusher observation added event
+3. Create an `.env` file at the project's root folder. You can use the provided `sample.env` file as a template. Specify the following environment variables:
 
-    REACT_APP_JISTI_URL - URL of Jitsi server
+```
+PORT: Port where the app will run.
+REACT_APP_FHIR_SERVER_URL: FHIR endpoint of the HAPI FHIR Server.
+REACT_APP_DOMAIN: Website domain of SITAW, used for SITAW specific FHIR resource/data.
+REACT_APP_LIFELINE_BACKEND_URL: Lifeline Backend endpoint.
+REACT_APP_PUSHER_EVENT: Pusher observation added event.
+REACT_APP_JISTI_URL: URL of the Jitsi server.
+REACT_APP_CMD_VEL_TOPIC: ROS topic for cmd_vel.
+REACT_APP_ODOM_TOPIC: ROS topic for odom.
+REACT_APP_POSE_TOPIC: ROS topic for pose.
 
-    REACT_APP_CMD_VEL_TOPIC - ROS topic for cmd_vel
-
-    REACT_APP_ODOM_TOPIC - ROS topic for odom
-
-    REACT_APP_POSE_TOPIC - ROS topic for pose
-
+```
 
 ## Dependencies
 
-### React
+The Lifeline v2 Frontend is built on the following technologies:
 
-React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
+- **React**: A powerful JavaScript library for building user interfaces using reusable UI components.
 
-### Redux/Redux Toolkit
+- **Redux/Redux Toolkit**: Redux is a JavaScript library for managing application state. Redux Toolkit provides a standardized way to write Redux logic.
 
-Redux is an open-source JavaScript library for managing and centralizing application state. The **Redux Toolkit** package is intended to be the standard way to write [Redux](https://redux.js.org/) logic.
+- **Material UI/Minimalist UI**: Material-UI is a library that offers a collection of components to create appealing user interfaces. Minimalist UI is an open-source React Admin Dashboard built with Material-UI components.
 
-### Material UI/ Minimalist UI
-Material-UI is simply a library that allows us to import and use different components to create a user interface in our React applications. Minimal UI is an open-source, React Admin Dashboard made with Material-UI components and React.
-  
-## Folders:
+## Folder Structure
 
-### public/
-Contains publicly available files like images and html pages.
- 
-### src/
-Contains all these following folders:
+The project's folder structure is organized as follows:
 
-#### _mock/
-Contains mock data for dev purposes.
+- **public/**: Contains publicly available files like images and HTML pages.
 
-#### app/
-Contains code for Redux store config.
+- **src/**: Contains the main source code, organized into subfolders:
 
-####  components/
-Contains codes for reusable components.
-  
-#### features/
-Contains codes for Redux slices. Each resource is in a separate folder/file.
-  
-#### hooks/
-Contains code for custom hooks. Hook used for reponsive layouting is here.
+    - **\_mock/**: Contains mock data used for development purposes.
 
-#### layouts/
-Contains codes for page layouts. 
+    - **app/**: Holds the code for the Redux store configuration.
 
-####  pages/
-Contains codes for pages. Pages are grouped into resources.
-  
-#### sections/
-Contains codes for reusable sections.
- 
-#### theme/
-Contains codes for theme overrides to Material UI by Minimal UI.
- 
-#### utils/
-Contains codes for utilities used to format data.
+    - **components/**: Contains reusable component code.
+
+    - **features/**: Contains Redux slice code. Each resource has its own separate folder/file.
+
+    - **hooks/**: Contains code for custom hooks, including the responsive layout hook.
+
+    - **layouts/**: Contains code for page layout structures.
+
+    - **pages/**: Contains code for different pages, grouped by resources.
+
+    - **sections/**: Contains code for reusable page sections.
+
+    - **theme/**: Holds code for theme overrides to Material UI as provided by Minimalist UI.
+
+    - **utils/**: Contains utility code used for data formatting and manipulation.
+
+## Conclusion
+
+Congratulations! You've now been introduced to Lifeline v2 Frontend. By following this developer manual, you should have a better understanding of how to set up the project, the technologies it relies on, and its folder structure. Feel free to explore, make modifications, and enjoy using Lifeline v2 Frontend for your needs. If you require further assistance, don't hesitate to refer back to this manual.

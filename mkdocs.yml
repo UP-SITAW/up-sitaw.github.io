@@ -2,6 +2,9 @@ site_name: UP SITAW Docs
 site_url: https://up-sitaw.github.io/
 nav:
   - Home: index.md
+  - 'FAQs and Troubleshooting':
+    - 'Lifeline':
+      - 'Jitsi Meeting Not Showing in Lifeline': faq/lifeline/jitsi-meeting-not-showing.md
   - 'Developer Documentation':
     - 'Lifeline Web App': developer/lifeline-web-app/index.md
     - 'Lifeline Deployment':
@@ -12,6 +15,7 @@ nav:
       - 'Installing dependencies required by Lifeline': developer/myBESHIE/installing-lifeline-dependencies.md
       - 'Running required services by Lifeline': developer/myBESHIE/running-required-services-by-lifeline.md
       - 'Creating a Desktop Shortcut on myBESHIE for Lifeline Jitsi Meetings': developer/myBESHIE/creating-desktop-shortcut.md
+
   # - About: about.md
   # - Getting Started:
   #   - Installation: installation.md
