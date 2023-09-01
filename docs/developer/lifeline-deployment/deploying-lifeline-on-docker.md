@@ -12,6 +12,8 @@ Before you proceed with deploying Lifeline services on Docker, ensure that you h
 
 2. **Git**: Git is a version control system used to track changes in the source code during software development. Install Git on your system to clone the Lifeline deployment repository and pull the latest code updates.
 
+3. **Python**: Python is required for running scripts to register FHIR extensions in Lifeline. Ensure you have Python installed on your system. You can download Python from the official Python website.
+
 ## Deployment Steps
 
 Follow these detailed steps to successfully deploy Lifeline services on Docker:
