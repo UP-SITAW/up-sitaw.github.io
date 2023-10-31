@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Welcome to the UP SITAW Software Documentation
 
 Welcome to the official documentation website for the UP SIBOL Integrated Telemonitoring Advancement Working Group (SITAW Group) software suite. Here, you'll find comprehensive documentation for all the software components that make up UP SITAW.
